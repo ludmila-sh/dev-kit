@@ -28,6 +28,16 @@ Python 3.12, pydantic-settings; FastAPI if it is a service. Dependencies in `req
 - Business logic in `services/` (or `domain/`), not in handlers.
 - Interface to a service: for a prototype or demo, Streamlit (but it needs a server); for a tool delivered to a client, FastAPI + Jinja + htmx. A separate React app only if it cannot be avoided.
 
+## Database (if the project has one)
+
+- Design the DB schema before the code and show it to me before the first migration.
+- Field and variable names are unambiguous and distinguishable. Do not use one name for different entities or two similar names for different ones.
+- Any schema change only through a migration. No manual edits.
+- Do not delete or rename fields and data without my confirmation; before that, say what will be affected.
+- Define types and constraints (NOT NULL, unique, foreign key, check) in the schema, do not rely on code.
+- In tests that write records, use different values for different fields so that swapped fields do not pass.
+- Database queries only parameterized.
+
 ## README
 
 I do not write READMEs by hand: you maintain it following the structure already laid out in `README.md`. Rules:
