@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+
+# Environment (keep only the example)
+.env
+.env.*
+!.env.example
+
+# Data: keep the folder, ignore the contents
+data/*
+!data/.gitkeep
+
+# Editors and OS
+.idea/
+.vscode/
+.DS_Store

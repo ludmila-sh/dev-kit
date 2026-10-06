@@ -1,0 +1,36 @@
+# Project
+
+<!-- One or two lines: what the project does and for whom. -->
+
+## Stack
+
+Python 3.12, pydantic-settings; FastAPI if it is a service. Dependencies in `requirements*.txt`, tool settings in `pyproject.toml`.
+
+## Structure
+
+- `app/` — code: `config.py`, `logging_config.py`, `main.py`, `services/`. For a service add `api/` (thin handlers) and `domain/` (models and business logic).
+- `tests/` — pytest tests.
+- `docs/` — prompts and notes for humans.
+- `logs/`, `output/` — runtime artifacts, not committed.
+- `credentials/` — local access files, not committed, the agent does not read them.
+- `ROADMAP.md` — goal and milestones. `STATUS.md` — current state, overwritten.
+
+## Commands
+
+- Check everything: `ruff check . && ruff format --check . && mypy app && pytest`
+- Run a script: `python -m app.main`. Run a service: `uvicorn app.main:app --reload`
+- Hooks: `pre-commit install`
+
+## Conventions
+
+- Settings only through `app/config.py` (`settings`); no `os.environ` anywhere else.
+- Logs via `get_logger(__name__)`, no `print`.
+- Business logic in `services/` (or `domain/`), not in handlers.
+- Interface to a service: for a prototype or demo, Streamlit (but it needs a server); for a tool delivered to a client, FastAPI + Jinja + htmx. A separate React app only if it cannot be avoided.
+
+## README
+
+I do not write READMEs by hand: you maintain it following the structure already laid out in `README.md`. Rules:
+- Write in English, briefly: a README is read to start the project quickly and understand what it does.
+- Sections: one-sentence description, Quick start (install, `.env` setup, run), Configuration (table of variables without values), Usage (example input and output), Project structure, Development (checks, hooks), Deployment. Delete an empty section, do not add extra ones.
+- Update the README when the way to run, the environment variables or the structure change. Do not duplicate what is in `ROADMAP.md` and `STATUS.md`.

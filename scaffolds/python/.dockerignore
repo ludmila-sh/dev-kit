@@ -1,0 +1,22 @@
+.git
+.claude
+.idea
+.vscode
+.venv
+__pycache__
+.mypy_cache
+.ruff_cache
+.pytest_cache
+
+# Secrets must never end up in an image
+.env
+.env.*
+!.env.example
+credentials
+secrets
+
+# Runtime artifacts and docs
+logs
+output
+docs
+tests
