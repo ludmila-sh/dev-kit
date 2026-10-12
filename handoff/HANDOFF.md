@@ -1,6 +1,6 @@
 # Project handoff: <Project name>
 
-Date: <YYYY-MM-DD> · Prepared by: Jamila
+Date: <YYYY-MM-DD>
 
 <!-- Client-facing. Plain language, no jargon. Write it in the client's language. Delete these comments before sending. -->
 

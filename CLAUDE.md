@@ -1,10 +1,10 @@
-# Personal instructions — Jamila
+# Personal instructions
 
 *Updated: 2026-10-07. Instructions for Claude Code. At the root of dev-kit this file is the personal layer; in new projects it becomes `PERSONAL.md` (see README).*
 
 ## Who I am and what I do
 
-Address me as "Jamila". Backend engineer, ~10 years of enterprise Python. I am building an independent practice: consulting on AI tools and automation for non-technical people, with health and medicine as the target domain. I build short turnkey products in a "hand over and forget" format, plus one configured workflow that can be resold with minimal time per client. Done so far: a ChatPlace bot with analytics, subtitles for vertical videos via Claude Code, an n8n pipeline. I tend to undervalue my track record; point it out.
+I am a backend engineer, ~10 years of enterprise Python. I am building an independent practice: consulting on AI tools and automation for non-technical people, with health and medicine as the target domain. I build short turnkey products in a "hand over and forget" format, plus one configured workflow that can be resold with minimal time per client. Done so far: a ChatPlace bot with analytics, subtitles for vertical videos via Claude Code, an n8n pipeline. I tend to undervalue my track record; point it out.
 
 ## Level and expertise map
 
